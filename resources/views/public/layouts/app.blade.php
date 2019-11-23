@@ -30,40 +30,33 @@
             @include('public.partials.region')
         @endif
 
+        <div class="header-top-wrap">
+            <div class="container header-top flex">
+                <div class="header-phone flex"><i class="glyphicon glyphicon-earphone"></i><span>{{$template->contacts['phone']}}</span></div>
+                <div class="header-phone flex"><i class="glyphicon glyphicon-phone"></i><span>+7(952)491-48-96</span></div>
+                <div class="header-right-wrap flex">
+                    <button class="callback" data-target="#modal-callback" data-toggle="modal">Заказать замер</button>
+                </div>
+            </div>
+        </div>
+
         <div class="container flex center-header">
             <div class="header-left">
-
                 @if ($template->uri != "/")
-                <a class="logo" href="/">{{COMPANY}}</a>
+                <a class="logo flex" href="/"><img src="/images/logo.png" alt="Престиж" title="Престиж" />{{COMPANY}}</a>
                 @else
-                <a class="logo" href="#">{{COMPANY}}</a>
+                <a class="logo flex" href="#"><img src="/images/logo.png" alt="Престиж" title="Престиж" />{{COMPANY}}</a>
                 @endif
-
-                <div class="address">{{$template->contacts['address']}}</div>
             </div>
 
             <div class="header-center flex">
                 <div class="header-center-wrap">
-                    <div class="header-phone flex"><i class="glyphicon glyphicon-earphone"></i><span>{{$template->contacts['phone']}}</span></div>
-                    <a class="header-mail flex" href="mailto:{{$template->contacts['mail']}}"><i class="glyphicon glyphicon-envelope"></i><span>{{$template->contacts['mail']}}</span></a>
+                    <div class="address flex"><i class="glyphicon glyphicon-map-marker"></i> {{$template->contacts['address']}}</div>
                 </div>
             </div>
             <div class="header-right flex">
-                    <div class="header-right-wrap">
-                    <button class="callback" data-target="#modal-callback" data-toggle="modal">Обратный звонок</button>
-
-                    @if(USE_CATALOG == "Y")
-                        <a class="basket-button" href="{{route('item.basket')}}">
-                            <i class="glyphicon glyphicon-shopping-cart"></i>
-                            <span>Корзина</span>
-                        </a>
-                    @else
-                        <a class="basket-button" href="{{route('item.showCatalogCategories')}}">
-                            <i class="glyphicon glyphicon-shopping-cart"></i>
-                            <span>Прайслист</span>
-                        </a>
-                    @endif
-
+                <div class="header-right-wrap">
+                    <a class="header-mail flex" href="mailto:{{$template->contacts['mail']}}"><i class="glyphicon glyphicon-envelope"></i><span>{{$template->contacts['mail']}}</span></a>
                 </div>
             </div>
         </div>
@@ -110,7 +103,7 @@
                     <div>Все права защищены</div>
                 </div>
                 <div class="footer-block text-right">
-                    <div>Время работы: <span class="workhours" itemprop="openingHours">Все дни недели 10:00 - 22:00</span></div>
+                    <div>Время работы: <span class="workhours" itemprop="openingHours">Все дни недели 09:00 - 19:00</span></div>
                     <div class="metrica"><img alt="" title="" src="/images/metrika.png"></div>
                     <div class="enterkursk">Сайт разработан <a target="_blank" href="https://enterkursk.ru">EnterKursk.ru</a></div>
                 </div>
@@ -139,11 +132,10 @@
                         <form method="post">
                             <input class="form-name form-control" type="text" placeholder="Введите имя" required name="name" size="16" />
                             <input class="form-phone form-control" type="tel" placeholder="8**********" required pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер" name="phone" size="16" />
-                            <input class="form-mail form-control" type="email" placeholder="email@email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" name="email" size="16" />
                             <textarea name="mess" class="form-massage" cols="23" rows="8"></textarea>
                             <div class="form-input form-pd"><label>Даю согласие на обработку <a href="#" target="_blank" rel="noopener noreferrer">персональных данных</a>:</label><input class="checkbox-inline" type="checkbox" required="" name="pd" /></div>
                             <label>Защита от спама: введите сумму 2+2:</label><input class="form-control" id="form-capcha" type="number" required name="capcha"/>
-                            <input class="btn form-submit order-button" type="submit" name="submit" value="Отправить сообщение" />
+                            <input class="btn form-submit order-button" type="submit" name="submit" value="Заказать замер" />
                         </form>
                         <div class='message-form alert alert-success'><p>Загрузка...</p></div>
                     </div>

@@ -8,6 +8,7 @@
             </thead>
             <tbody>
                 @foreach($propGroup as $propId=>$property)
+                    @if(!empty($property['value']))
                     <tr>
                         @if($property['type'] == PROP_TYPE_IMG)
                             <td colspan="2">
@@ -69,6 +70,7 @@
                             </td>
                         @endif
                     </tr>
+                    @endif
                 @endforeach
             </tbody>
         </table>

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'EnterCMS'),
+    'name' => env('APP_NAME', 'prestige-window'),
 
     /*
     |--------------------------------------------------------------------------

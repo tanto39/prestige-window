@@ -46,7 +46,7 @@ class HomeController extends Controller
                 'description'
             ])
             ->orderby('order', 'asc')->orderby('updated_at', 'desc')
-            ->skip(0)->take(3)
+            ->skip(0)->take(4)
             ->get()->toArray();
 
         $categories = $this->handleCategoriesArray($categories);

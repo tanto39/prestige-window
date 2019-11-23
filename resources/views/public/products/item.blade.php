@@ -14,20 +14,17 @@
                         <div class="product-desc @if(empty($result['preview_img'])) full-flex-basis @endif">
                             <div class="top-product-block flex">
                                 <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">Цена:
-                                    <span itemprop="price">@if(isset($result['properties'][PROP_GROUP_NAME_ALL][PROP_PRICE_ID]['value'])){{$result['properties'][PROP_GROUP_NAME_ALL][PROP_PRICE_ID]['value']}}@else 0 @endif</span>
+                                    @if(isset($result['properties'][PROP_GROUP_NAME_ALL][PROP_PRICE_ID]['value']))
+                                    <span itemprop="price">{{$result['properties'][PROP_GROUP_NAME_ALL][PROP_PRICE_ID]['value']}}</span>
                                     <span>руб.</span>
+                                    @else
+                                    <span itemprop="price">уточняйте по телелефону</span>
+                                    @endif
                                     <meta itemprop="priceCurrency" content="RUB">
                                 </div>
                                 <div class="order-box flex">
-                                    <div class="quantity-wrap">
-                                        <input class="form-control" type="number" value="1"/>
-                                    </div>
                                     <div class="order-button-wrap">
-                                        @if ($inBasket == 'Y')
-                                            <button class="order-button add-basket-active callback_content" onclick="enterShop.showBasket()"><i class="glyphicon glyphicon-shopping-cart"></i><span>В корзине</span></button>
-                                        @else
-                                            <button class="order-button callback_content" onclick="enterShop.addToBasket({{$result['id']}}, $('.quantity-wrap input').val())"><i class="glyphicon glyphicon-shopping-cart"></i><span>В корзину</span></button>
-                                        @endif
+                                       <button class="order-button callback_content" data-target="#modal-callback" data-toggle="modal"><i class="glyphicon glyphicon-shopping-cart"></i><span>Заказать замер</span></button>
                                     </div>
                                 </div>
                             </div>

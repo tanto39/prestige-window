@@ -11,18 +11,19 @@ if($template->isInstance == 'N') $template->setTemplateVariables();
         <div class="adv-wrap flex">
             <div class="adv-item">
                 <div class="adv-img adv-img-1"></div>
-                <p class="adv-title">Доступные цены</p>
-                <p class="adv-desc">Лучшие {{$template->contacts['companyWhere']}} цены</p>
+                <p class="adv-title">Рассрочка на 12 месяцев</p>
             </div>
             <div class="adv-item">
                 <div class="adv-img adv-img-2"></div>
-                <p class="adv-title">Высокое качество</p>
-                <p class="adv-desc">Только официальные поставщики</p>
+                <p class="adv-title">Работаем с материнским капиталом</p>
             </div>
             <div class="adv-item">
                 <div class="adv-img adv-img-3"></div>
-                <p class="adv-title">Многолетний опыт</p>
-                <p class="adv-desc">Мы дорожим своим авторитетом</p>
+                <p class="adv-title">Замерка и доставка в районы бесплатно</p>
+            </div>
+            <div class="adv-item">
+                <div class="adv-img adv-img-4"></div>
+                <p class="adv-title">Кредит до 5 лет</p>
             </div>
         </div>
     </div>
@@ -35,11 +36,11 @@ if($template->isInstance == 'N') $template->setTemplateVariables();
         @endif
         {!! $result['full_content'] !!}
     </article>
-    <button class="callback" data-target="#modal-callback" data-toggle="modal">Обратный звонок</button>
+    <button class="callback" data-target="#modal-callback" data-toggle="modal">Запишись на бесплатный замер!</button>
 </main>
 <section class="section landing-section landing-section-color">
     <div class="container catalog-categories">
-        <h2>Каталог товаров</h2>
+        <h2>Каталог</h2>
         <div class="flex category-list">
             @foreach($categories as $category)
                 <a class="list-item" href="{{route('item.showCatalogCategory', ['category_slug' => $category['slug']])}}">
