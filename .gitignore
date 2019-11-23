@@ -1,0 +1,17 @@
+/node_modules
+/public/hot
+/public/images
+/public/files
+/public/storage
+/public/sitemap.xml
+/public/turbopages.xml
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+composer.lock
+.env
