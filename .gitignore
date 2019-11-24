@@ -5,6 +5,8 @@
 /public/storage
 /public/sitemap.xml
 /public/turbopages.xml
+/public/yandexmarket.yml
+/public/.htaccess
 /storage/*.key
 /vendor
 /.idea
