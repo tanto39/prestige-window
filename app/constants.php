@@ -1,6 +1,6 @@
 <?php
 // Site settings
-define("ADMIN_EMAIL", 'tanto39@mail.ru');
+define("ADMIN_EMAIL", 'info@prestige-profi.ru');
 define("HOST_PATH", 'http://prestige-profi.ru/');
 
 // Pagination

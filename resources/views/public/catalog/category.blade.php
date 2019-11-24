@@ -78,7 +78,7 @@
                                     @if(isset($item['properties'][PROP_GROUP_NAME_ALL][PROP_PRICE_ID]['value']))
                                         {{$item['properties'][PROP_GROUP_NAME_ALL][PROP_PRICE_ID]['value']}}
                                     @else
-                                        0
+                                        -
                                     @endif
                                         руб.
                                 </span>
