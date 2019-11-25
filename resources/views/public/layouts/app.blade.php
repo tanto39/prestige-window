@@ -33,7 +33,7 @@
         <div class="header-top-wrap">
             <div class="container header-top flex">
                 <div class="header-phone flex"><i class="glyphicon glyphicon-earphone"></i><span>{{$template->contacts['phone']}}</span></div>
-                <div class="header-phone flex"><i class="glyphicon glyphicon-phone"></i><span>+7(952)491-48-96</span></div>
+                <div class="header-phone flex"><i class="glyphicon glyphicon-phone"></i><span>+7(910)731-00-63</span></div>
                 <div class="header-right-wrap flex">
                     <button class="callback" data-target="#modal-callback" data-toggle="modal">Заказать замер</button>
                 </div>
@@ -96,8 +96,9 @@
         <div class="container">
             <div class="contact flex" itemscope itemtype="http://schema.org/LocalBusiness" >
                 <div class="footer-block">
-                    <div class="fn org" itemprop="name"><span class="category">ООО </span>{{COMPANY}}</div>
+                    <div class="fn org" itemprop="name"><span class="category">Компания </span>{{COMPANY}}</div>
                     <div class="tel" itemprop="telephone">{{$template->contacts['phone']}}</div>
+                    <div class="tel" itemprop="telephone">+7(910)731-00-63</div>
                     <div>Адрес: <span itemprop="address">{{$template->contacts['address']}}</span></div>
                     <div class="email" itemprop="email">{{$template->contacts['mail']}}</div>
                     <div>Все права защищены</div>

@@ -59,7 +59,7 @@ define("META_DESC", "Престиж - окна, двери, балконы, на
 // Contacts
 define("COMPANY", "Престиж");
 define("COMPANY_WHERE", "в Курске");
-define("PHONE", "+7 (4712) 2-22-50");
+define("PHONE", "+7 (4712) 31-00-63");
 define("ADDRESS", "г. Курск, пр-т Кулакова, 1В");
 define("MAIL", "info@prestige-profi.ru");
 define("COMPANY_MAP", "<script defer async src=\"https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2cb1d0a473b326345d46ae50c8b297657b77a8afd2271355bba89e8539d6bd6d&amp;width=100%25&amp;height=358&amp;lang=ru_RU&amp;scroll=false\"></script>");
