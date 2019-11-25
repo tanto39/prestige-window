@@ -110,6 +110,8 @@ trait CategoryTrait
         //get child categories
         $childCategories = Category::where('parent_id', $category['id'])->select(['id'])->get()->toArray();
 
+        $items = $items->with('category');
+
         if(!empty($childCategories)) {
             foreach ($childCategories as $key=>$arCategory)
                 $childCategories[$key] = $arCategory['id'];
@@ -128,6 +130,7 @@ trait CategoryTrait
                 'order',
                 'rating',
                 'slug',
+                'category_id',
                 'description',
                 'properties',
             ])
