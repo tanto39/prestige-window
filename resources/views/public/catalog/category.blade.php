@@ -76,11 +76,10 @@
                             <div class="price">Цена:
                                 <span>
                                     @if(isset($item['properties'][PROP_GROUP_NAME_ALL][PROP_PRICE_ID]['value']))
-                                        {{$item['properties'][PROP_GROUP_NAME_ALL][PROP_PRICE_ID]['value']}}
+                                        {{$item['properties'][PROP_GROUP_NAME_ALL][PROP_PRICE_ID]['value']}} руб.
                                     @else
-                                        -
+                                        уточнять
                                     @endif
-                                        руб.
                                 </span>
                             </div>
                             <span class="order-button">Подробнее</span>
