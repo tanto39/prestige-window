@@ -13,11 +13,11 @@ else
 	} 
 	else
 	{
-		$to = ADMIN_EMAIL; /*Укажите ваш адрес электоронной почты*/
+		$to = "info@prestige-profi.ru"; /*Укажите ваш адрес электоронной почты*/
 		$headers = "Content-type: text/plain; charset = utf-8";
 		$subject = "Сообщение с вашего сайта";
 		$message = "Имя: $name \nТелефон: $phone \nСообщение: $mess";
-		$send = mail ($to, $subject, $message, $headers);
+		$send = mail($to, $subject, $message, $headers);
 
 		if ($send == 'true')
 		{
