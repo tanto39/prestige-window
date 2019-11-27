@@ -1,20 +1,19 @@
-# User-agent: *
-# Disallow: /admin/
-# Disallow: /vendor/
-# Disallow: /*.php&
-# Disallow: /*mail.php
-# Disallow: /*index.php*
-# Disallow: /*setfilter*
-# Disallow: /*page=*
-# Disallow: /*index.html*
-# Allow: /sitemap.xml
-# Allow: /*.js
-# Allow: /*.css
-# Allow: /*.gif
-# Allow: /*.jpg
-# Allow: /*.png
-# Allow: /*.svg
-# Sitemap: https://site.ru/sitemap.xml
-# Host: https://site.ru
 User-agent: *
-Disallow: /
+Disallow: /admin/
+Disallow: /vendor/
+Disallow: /blog/
+Disallow: /*.php&
+Disallow: /*mail.php
+Disallow: /*index.php*
+Disallow: /*setfilter*
+Disallow: /*page=*
+Disallow: /*index.html*
+Allow: /sitemap.xml
+Allow: /*.js
+Allow: /*.css
+Allow: /*.gif
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+Sitemap: https://prestige-profi.ru/sitemap.xml
+Host: https://prestige-profi.ru

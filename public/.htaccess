@@ -37,18 +37,18 @@
 
     RewriteEngine On
 
-    # RewriteCond %{HTTP:X-Forwarded-Proto} !=https
-    # RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L] 
 
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /public
     RewriteRule ^(.*)$ / [R=301,L]
 
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
-    RewriteRule ^index\.php$ https://site.ru/ [R=301,L]
+    RewriteRule ^index\.php$ https://prestige-profi.ru/ [R=301,L]
 
     AddDefaultCharset UTF-8
-    RewriteCond %{HTTP_HOST} ^www\.site\.ru$ [NC]
-    RewriteRule ^(.*)$ https://site.ru/$1 [R=301,L]
+    RewriteCond %{HTTP_HOST} ^www\.prestige-profi\.ru$ [NC]
+    RewriteRule ^(.*)$ https://prestige-profi.ru/$1 [R=301,L]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d

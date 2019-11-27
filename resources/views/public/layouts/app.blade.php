@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <meta name="yandex-verification" content="71f339cb7d9e5155" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -105,7 +106,28 @@
                 </div>
                 <div class="footer-block text-right">
                     <div>Время работы: <span class="workhours" itemprop="openingHours">Все дни недели 09:00 - 19:00</span></div>
-                    <div class="metrica"><img alt="" title="" src="/images/metrika.png"></div>
+                    <div class="metrica">
+                    <!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=56420137&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/56420137/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="56420137" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(56420137, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/56420137" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+                    </div>
                     <div class="enterkursk">Сайт разработан <a target="_blank" href="https://enterkursk.ru">EnterKursk.ru</a></div>
                 </div>
             </div>
