@@ -41,7 +41,7 @@
                         @endisset
                     </div>
 
-                    <div class="full_content" itemprop="description"><h2>Описание {{$result['title']}}</h2>{!! $result['full_content'] !!}</div>
+                    <div class="full_content" itemprop="description"><h2>Описание</h2>{!! $result['full_content'] !!}</div>
 
                 </article>
             </main>

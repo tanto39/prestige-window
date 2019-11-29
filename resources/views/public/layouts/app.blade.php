@@ -170,9 +170,9 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
                             <textarea name="mess" class="form-massage" cols="23" rows="8"></textarea>
                             <div class="form-input form-pd"><label>Даю согласие на обработку <a href="#" target="_blank" rel="noopener noreferrer">персональных данных</a>:</label><input class="checkbox-inline" type="checkbox" required="" name="pd" /></div>
                             <label>Защита от спама: введите сумму 2+2:</label><input class="form-control" id="form-capcha" type="number" required name="capcha"/>
+                            <div class='message-form alert alert-success'><p>Загрузка...</p></div>
                             <input class="btn form-submit order-button" type="submit" name="submit" value="Заказать замер" />
                         </form>
-                        <div class='message-form alert alert-success'><p>Загрузка...</p></div>
                     </div>
                 </div>
                 <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
