@@ -181,5 +181,27 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
     </div>
     <!-- Callback form -->
 </div>
+<script type='text/javascript'>
+(function () {
+    window['yandexChatWidgetCallback'] = function() {
+        try {
+            window.yandexChatWidget = new Ya.ChatWidget({
+                guid: 'c098fe4c-9a79-4d4e-932d-b96090c1412c',
+                buttonText: 'Задать вопрос',
+                title: 'Чат',
+                theme: 'light',
+                collapsedDesktop: 'never',
+                collapsedTouch: 'always'
+            });
+        } catch(e) { }
+    };
+    var n = document.getElementsByTagName('script')[0],
+        s = document.createElement('script');
+    s.async = true;
+    s.charset = 'UTF-8';
+    s.src = 'https://chat.s3.yandex.net/widget.js';
+    n.parentNode.insertBefore(s, n);
+})();
+</script>
 </body>
 </html>
