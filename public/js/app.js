@@ -41,6 +41,10 @@ function n(t){return void 0===t||null===t}function r(t){return void 0!==t&&null!
 //# sourceMappingURL=blueimp-gallery.min.js.map
 
 $(document).ready(function () {
+    var modalCallback = $("#modal-callback");
+    if(modalCallback.data('isloadmodale') == "Y")
+        $("#modal-callback").modal('show');
+
     /**
      * Slider product images
      * @type {Array}

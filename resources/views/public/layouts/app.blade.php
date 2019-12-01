@@ -20,6 +20,10 @@
     <!-- Scripts -->
     <script defer src="{{ asset('js/app.js') }}"></script>
 
+    @if($template->isLoadModal == "Y")
+        <script defer> $('#modal-callback').modal('show'); </script>
+    @endif
+
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     
@@ -156,18 +160,17 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
     <div class="scroll hidden-xs"><i class="glyphicon glyphicon glyphicon-chevron-up" aria-hidden="true"></i></div>
 
     <!-- Callback form -->
-    <div id="modal-callback" class="modal fade" tabindex="-1">
+    <div id="modal-callback" class="modal fade" tabindex="-1" data-isloadmodale="{{$template->isLoadModal}}">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
-                    <span class="modal-title">Отправить сообщение</span>
+                    <span class="modal-title">Заказать замер</span>
                 </div>
                 <div class="modal-body">
                     <div class="form-zakaz">
                         <form method="post">
                             <input class="form-name form-control" type="text" placeholder="Введите имя" required name="name" size="16" />
-                            <input class="form-phone form-control" type="tel" placeholder="8**********" required pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер" name="phone" size="16" />
-                            <textarea name="mess" class="form-massage" cols="23" rows="8"></textarea>
+                            <input class="form-phone form-control" type="tel" placeholder="Телефон (в формате 8**********)" required pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер" name="phone" size="16" />
                             <div class="form-input form-pd"><label>Даю согласие на обработку <a href="#" target="_blank" rel="noopener noreferrer">персональных данных</a>:</label><input class="checkbox-inline" type="checkbox" required="" name="pd" /></div>
                             <label>Защита от спама: введите сумму 2+2:</label><input class="form-control" id="form-capcha" type="number" required name="capcha"/>
                             <div class='message-form alert alert-success'><p>Загрузка...</p></div>

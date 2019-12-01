@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use App;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Cookie;
 
 class TemplateController extends Controller
 {
@@ -19,6 +20,7 @@ class TemplateController extends Controller
         'map' => COMPANY_MAP,
         'companyWhere' => COMPANY_WHERE
     ];
+    public $isLoadModal = "Y";
 
     private function __construct() {}
 
@@ -59,8 +61,17 @@ class TemplateController extends Controller
                 ];
         }
 
+        // Modal start page
+        $isLoadModalCookie = Cookie::get('isLoadModal');
+
+        if (empty($isLoadModalCookie)) {
+            Cookie::queue('isLoadModal', "N", 5);
+        }
+        else {
+            $this->isLoadModal = $isLoadModalCookie;
+        }
+
         $this->isInstance = 'Y';
     }
-
 
 }
