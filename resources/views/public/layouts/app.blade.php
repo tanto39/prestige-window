@@ -20,9 +20,6 @@
     <!-- Scripts -->
     <script defer src="{{ asset('js/app.js') }}"></script>
 
-    @if($template->isLoadModal == "Y")
-        <script defer> $('#modal-callback').modal('show'); </script>
-    @endif
 
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
@@ -184,7 +181,7 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
     </div>
     <!-- Callback form -->
 </div>
-<script type='text/javascript'>
+<script>
 (function () {
     window['yandexChatWidgetCallback'] = function() {
         try {
