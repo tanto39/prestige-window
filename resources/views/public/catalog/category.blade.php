@@ -8,7 +8,7 @@
             @include('public.partials.breadcrumbs')
 
             <main>
-                <h1>{{$result['title']}}</h1>
+                <h1>{{$result['title'].' '.$template->contacts['companyWhere']}}</h1>
 
                 <div class="flex category-desk">
                     {{--Include Slider--}}
@@ -19,7 +19,7 @@
                     @endisset
 
                     <article @if(USE_CATALOG == "Y")class="category-content"@endif>
-                        <h2>{{$result['title'].' '.$template->contacts['companyWhere']}}</h2>
+                        <h2>{{$result['title'].' '.$template->contacts['companyWhere']}} и районах Курской области</h2>
                         {!! $result['full_content'] !!}
                     </article>
                 </div>
