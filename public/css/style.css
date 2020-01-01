@@ -748,6 +748,7 @@ p.adv-desc {margin: 0;color: #401714;}
     .left-sidebar{order:2;}
     .footer-block{text-align: left;}
     .logo img {width: 40px;}
+    .modal-footer button{display:block;}
 }
 @media all and (max-width: 576px) {
     .top-product-block, .product-list, .property-item-link, .basket-item{
