@@ -148,7 +148,7 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
     </footer>
 
     <!--кнопки соцсетей-->
-    <div class="socbuttons">
+    <div class="socbuttons" id="socbuttons">
         <script defer src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
         <script defer src="//yastatic.net/share2/share.js"></script>
         <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter"></div>

@@ -515,9 +515,10 @@ p.adv-desc {margin: 0;color: #401714;}
 .enterkursk{margin: 0.9em 0 0 0;font-size: 0.9em;}
 
 /*----socbuttons для горизонтального выравнивания просто удалить эти стили-----*/
-.socbuttons{position: fixed; display: block; right: 0.3rem; top: 36vh;}
-.socbuttons .ya-share2__container_size_m .ya-share2__icon{height: 7vh;width: 7vh;}
-.socbuttons .ya-share2__item, .socbuttons .ya-share2__list_direction_horizontal > .ya-share2__item{display: block; margin-top: 0.5rem;}
+#socbuttons{position: fixed; display: block; right: 0.3rem; top: 36vh;}
+#socbuttons .ya-share2__container_size_m .ya-share2__icon{height: 7vh;width: 7vh;}
+#socbuttons .ya-share2__item, #socbuttons .ya-share2__list_direction_horizontal > .ya-share2__item{display: block !important; margin-top: 0.5rem !important;}
+#socbuttons .ya-share2__container_size_m .ya-share2__icon{background-size: auto !important;}
 
 /*---scroll---*/
 .scroll{
@@ -696,8 +697,8 @@ p.adv-desc {margin: 0;color: #401714;}
     .adv-img-3 {background-position: -540px -20px;}
     .header{font-size:1em;}
     .container{width: 95%;}
-    .socbuttons {position: relative;top:0;}
-    .socbuttons li{float: left;}
+    #socbuttons {position: relative;top:0;}
+    #socbuttons li{float: left;}
     .item-page {margin: 0;padding: 0.7em;}
     .header-left, .header-right {
         flex-basis: 32%;

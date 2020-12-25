@@ -15,7 +15,7 @@ if($template->isInstance == 'N') $template->setTemplateVariables();
             </div>
             <div class="adv-item">
                 <div class="adv-img adv-img-2"></div>
-                <p class="adv-title">Работаем с материнским капиталом</p>
+                <p class="adv-title">Работаем с областным материнским капиталом</p>
             </div>
             <div class="adv-item">
                 <div class="adv-img adv-img-3"></div>
